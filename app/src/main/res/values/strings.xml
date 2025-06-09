@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">NoticeHub-AndroidApp</string>
+    <string name="welcome">Welcome!</string>
+    <string name="please_enter_your_registered_email_address">Please Enter Your Registered Email Address.</string>
+    <string name="app_logo">AppLogo</string>
+    <string name="email">Email</string>
+    <string name="verify">Verify</string>
+    <string name="en">EN</string>
+    <string name="please_set_your_password">Please Set Your Password</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="set_password">Set Password</string>
+    <string name="hi_prem">Hi, Prem</string>
+    <string name="enter_credentials_to_login">Enter Credentials To Login</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="tap_to_login_with_fingerprint">Tap to Login with Fingerprint</string>
+    <string name="remember_me">Remember me</string>
+    <string name="hi">"Hi, "</string>
+    <string name="prem">Prem</string>
+    <string-array name="languages">
+        <item>EN</item>
+        <item>NE</item>
+    </string-array>
+
+</resources>

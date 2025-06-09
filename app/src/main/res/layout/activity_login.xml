@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".LoginActivity">
+
+    <FrameLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Top Curved Shape -->
+        <ImageView
+            android:id="@+id/top_curve"
+            android:layout_width="250dp"
+            android:layout_height="160dp"
+            android:importantForAccessibility="no"
+            android:src="@drawable/top_curve"
+            android:scaleType="fitXY"
+            android:layout_gravity="start" />
+
+        <EditText
+            android:layout_width="80dp"
+            android:layout_height="48dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/edittext_background"
+            android:backgroundTint="@color/blue"
+            android:drawableEnd="@drawable/drop_down_arrow"
+            android:importantForAutofill="no"
+            android:paddingStart="10dp"
+            android:paddingEnd="8dp"
+            android:text="@string/en"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            tools:ignore="LabelFor,RtlSymmetry,TextFields" />
+
+    </FrameLayout>
+
+    <!-- App Logo -->
+    <TextView
+        android:id="@+id/app_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_logo"
+        android:textColor="@color/blue"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+    <!-- Welcome Text -->
+    <FrameLayout
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        tools:ignore="TextSizeCheck">
+
+        <TextView
+            android:id="@+id/tvHi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hi"
+            android:textColor="@color/blue"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvFirstName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="@string/prem"
+            android:textColor="@color/blue"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+
+    </FrameLayout>
+
+
+    <!-- Instruction -->
+    <TextView
+        android:id="@+id/instruction_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_credentials_to_login"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="10dp" />
+
+    <!-- Email Input -->
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_background"
+        android:drawableStart="@drawable/email_icon_half_opacity"
+        android:drawablePadding="6dp"
+        android:hint="@string/email"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textSize="18sp" />
+
+<!--    Password Input-->
+    <EditText
+        android:id="@+id/etPass"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:drawableEnd="@drawable/eye_icon"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittext_background"
+        android:drawableStart="@drawable/lock_icon_half_opacity"
+        android:drawablePadding="6dp"
+        android:hint="@string/password"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textSize="18sp" />
+
+    <FrameLayout
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        tools:ignore="TextSizeCheck">
+
+        <TextView
+            android:id="@+id/tvRememberMe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:drawablePadding="3dp"
+            android:text="@string/remember_me"
+            android:textColor="@color/blue"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:drawableStartCompat="@drawable/checkbox_icon" />
+
+        <TextView
+            android:id="@+id/tvForgotPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="@string/forgot_password"
+            android:textColor="@color/blue"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+
+
+
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:minHeight="48dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/blue"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:background="@drawable/edittext_background"
+        android:layout_marginTop="20dp"
+        tools:ignore="VisualLintButtonSize" />
+
+
+    <!-- Fingerprint Login -->
+    <TextView
+        android:id="@+id/tvFingerprintLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:drawablePadding="5dp"
+        android:text="@string/tap_to_login_with_fingerprint"
+        android:textColor="@color/blue"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        app:drawableStartCompat="@drawable/fingerprint_icon" />
+
+
+<!--    Bottom curve-->
+    <ImageView
+        android:id="@+id/bottom_curve"
+        android:layout_width="250dp"
+        android:layout_height="160dp"
+        android:importantForAccessibility="no"
+        android:src="@drawable/bottom_curve"
+        android:scaleType="fitXY"
+        android:layout_gravity="end"
+        android:layout_marginTop="5dp"/>
+
+</LinearLayout>
