@@ -192,25 +192,21 @@
 
     </FrameLayout>
 
-
-
-
     <!-- Verify Button -->
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btnVerify"
         android:layout_width="340dp"
         android:layout_height="wrap_content"
         android:text="@string/verify"
-        android:minHeight="48dp"
+        android:textAllCaps="false"
         android:textStyle="bold"
-        android:textColor="@android:color/white"
-        android:backgroundTint="@color/blue"
+        android:minHeight="48dp"
+        android:textColor="@color/white"
         android:textSize="18sp"
-        android:padding="10dp"
         android:background="@drawable/edittext_background"
+        app:backgroundTint="@color/blue"
         android:layout_marginTop="20dp"
-        tools:ignore="VisualLintButtonSize" />
-
+        android:padding="10dp"/>
 
     <!-- Bottom Curved Shape -->
     <ImageView
