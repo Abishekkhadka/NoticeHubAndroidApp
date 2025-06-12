@@ -198,7 +198,7 @@
         android:textColor="@color/blue"
         android:textStyle="bold"
         android:textSize="14sp"
-        app:drawableStartCompat="@drawable/fingerprint_icon" />
+        app:drawableStartCompat="@drawable/biometric_enable_icon" />
 
 
 <!--    Bottom curve-->

@@ -7,111 +7,121 @@
     android:background="@color/white"
     tools:context=".StudentFeedbackFragment">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="30dp">
+        android:fillViewport="true"
+        tools:ignore="UselessParent">
 
-        <!-- Subject Label -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/subject"
-            android:textStyle="bold"
-            android:textColor="@color/black"
-            android:textSize="18sp"
-            android:layout_marginBottom="5dp"/>
-
-        <!-- Subject Input -->
-        <EditText
-            android:id="@+id/etFeedbackSub"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/edittext_background"
-            android:hint="@string/enter_subject"
-            android:importantForAutofill="no"
-            android:inputType="textPassword"
-            android:minHeight="48dp"
-            android:padding="10dp"
-            android:textSize="18sp"
-            android:layout_marginBottom="20dp"
-            tools:ignore="VisualLintTextFieldSize" />
+            android:orientation="vertical"
+            android:padding="30dp">
 
-        <!-- Feedback Label -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/description"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            android:textSize="18sp"
-            android:layout_marginBottom="5dp"/>
-
-        <!-- Feedback Input -->
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="240dp"
-            android:layout_marginBottom="20dp"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/etFeedbackDescription"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@color/dim_color"
-                android:gravity="top|start"
-                android:hint="@string/write_your_feedback_here"
-                android:inputType="textMultiLine"
-                android:padding="10dp"
+            <!-- Subject Label -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/subject"
+                android:textStyle="bold"
                 android:textColor="@color/black"
                 android:textSize="18sp"
-                tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
-        </com.google.android.material.textfield.TextInputLayout>
+                android:layout_marginBottom="5dp"/>
 
-        <!-- Feedback To Label -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/feedback_to"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            android:textSize="18sp"
-            android:layout_marginBottom="5dp"/>
+            <!-- Subject Input -->
+            <EditText
+                android:id="@+id/etFeedbackSub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_background"
+                android:hint="@string/enter_subject"
+                android:importantForAutofill="no"
+                android:inputType="textPassword"
+                android:minHeight="48dp"
+                android:padding="10dp"
+                android:textSize="18sp"
+                android:layout_marginBottom="20dp"
+                tools:ignore="VisualLintTextFieldSize" />
 
-        <!-- Feedback Recipient Dropdown -->
-        <EditText
-            android:id="@+id/etFeedbackTo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/edittext_background"
-            android:hint="@string/select_recipient"
-            android:drawableEnd="@drawable/drop_down_black_icon"
-            android:importantForAutofill="no"
-            android:inputType="textPassword"
-            android:minHeight="48dp"
-            android:padding="10dp"
-            android:textSize="18sp"
-            android:layout_marginBottom="40dp"
-            tools:ignore="VisualLintTextFieldSize" />
+            <!-- Feedback Label -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/description"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginBottom="5dp"/>
+
+            <!-- Feedback Input -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:layout_marginBottom="20dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etFeedbackDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/dim_color"
+                    android:gravity="top|start"
+                    android:hint="@string/write_your_feedback_here"
+                    android:inputType="textMultiLine"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Feedback To Label -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/feedback_to"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginBottom="5dp"/>
+
+            <!-- Feedback Recipient Dropdown -->
+            <EditText
+                android:id="@+id/etFeedbackTo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_background"
+                android:hint="@string/select_recipient"
+                android:drawableEnd="@drawable/drop_down_black_icon"
+                android:importantForAutofill="no"
+                android:inputType="textPassword"
+                android:minHeight="48dp"
+                android:padding="10dp"
+                android:textSize="18sp"
+                android:layout_marginBottom="40dp"
+                tools:ignore="VisualLintTextFieldSize" />
 
 
-        <!-- Send Button -->
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnSendFeedback"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/send"
-            android:textAllCaps="false"
-            android:textStyle="bold"
-            android:minHeight="48dp"
-            android:textColor="@color/white"
-            android:textSize="18sp"
-            android:background="@drawable/edittext_background"
-            app:backgroundTint="@color/blue"
-            android:padding="10dp"
-            tools:ignore="VisualLintButtonSize" />
+            <!-- Send Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSendFeedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/send"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:minHeight="48dp"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:background="@drawable/edittext_background"
+                app:backgroundTint="@color/blue"
+                android:padding="10dp"
+                tools:ignore="VisualLintButtonSize" />
 
-    </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
 
 </FrameLayout>

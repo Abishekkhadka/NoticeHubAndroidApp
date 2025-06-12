@@ -3,12 +3,252 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ProfileFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        tools:ignore="UselessParent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <ImageView
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:src="@drawable/profile_icon_blue"
+                    android:layout_marginEnd="8dp"
+                    tools:ignore="ContentDescription" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingTop="30dp"
+                    >
+                    <TextView
+                        android:id="@+id/tvFullName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/prem_rawal"
+                        android:textSize="26sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/tvEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:text="@string/prem24_gmail_com"/>
+
+                    <TextView
+                        android:id="@+id/tvPhone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_9862539180"
+                        android:textSize="18sp"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <!-- Edit Profile Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnEditProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/edit_profile"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:minHeight="48dp"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:background="@drawable/edittext_background"
+                app:backgroundTint="@color/blue"
+                android:padding="10dp"
+                tools:ignore="VisualLintButtonSize" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/my_info"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="25dp"
+                android:drawablePadding="8dp"
+                app:drawableStartCompat="@drawable/info_icon" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/content_edittext_background"
+                android:padding="10dp"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/tvFirstName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/first_name"
+                    android:textStyle="bold"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tvLastName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/last_name"
+                    android:textStyle="bold"
+                    android:textSize="18sp" />
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/setting"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="25dp"
+                android:drawablePadding="6dp"
+                app:drawableStartCompat="@drawable/setting_icon" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/content_edittext_background"
+                android:padding="10dp"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/tvChangePass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/change_password"
+                    android:textStyle="bold"
+                    android:drawablePadding="8dp"
+                    android:layout_margin="6dp"
+                    android:textColor="@color/blue"
+                    android:textSize="18sp"
+                    app:drawableStartCompat="@drawable/change_pass_icon" />
+
+                <TextView
+                    android:id="@+id/tvChangeEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/change_email"
+                    android:textStyle="bold"
+                    android:drawablePadding="8dp"
+                    android:textColor="@color/blue"
+                    android:textSize="18sp"
+                    android:layout_margin="6dp"
+                    app:drawableStartCompat="@drawable/change_email_icon" />
+
+                <TextView
+                    android:id="@+id/tvEnableBio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/biometric_login"
+                    android:textStyle="bold"
+                    android:drawablePadding="8dp"
+                    android:textColor="@color/blue"
+                    android:textSize="18sp"
+                    android:layout_margin="6dp"
+                    app:drawableEndCompat="@drawable/toggle_on"
+                    app:drawableStartCompat="@drawable/biometric_enable_icon" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/help_amp_support"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="25dp"
+                android:drawablePadding="6dp"
+                app:drawableStartCompat="@drawable/help_support_icon" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/content_edittext_background"
+                android:padding="10dp"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/tvHelp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/change_password"
+                    android:textStyle="bold"
+                    android:drawablePadding="8dp"
+                    android:layout_margin="6dp"
+                    android:textColor="@color/blue"
+                    android:textSize="18sp"
+                    app:drawableStartCompat="@drawable/change_pass_icon" />
+
+                <TextView
+                    android:id="@+id/tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/change_email"
+                    android:textStyle="bold"
+                    android:drawablePadding="8dp"
+                    android:textColor="@color/blue"
+                    android:textSize="18sp"
+                    android:layout_margin="6dp"
+                    app:drawableStartCompat="@drawable/change_email_icon" />
+
+            </LinearLayout>
+
+            <!-- Edit Profile Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnLogOut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/log_out"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:minHeight="48dp"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:background="@drawable/edittext_background"
+                app:backgroundTint="@color/red"
+                android:paddingStart="136dp"
+                android:paddingEnd="136dp"
+                android:drawableLeft="@drawable/logout_icon"
+                android:layout_marginTop="25dp"
+                tools:ignore="RtlHardcoded,RtlSymmetry,VisualLintButtonSize" />
+
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </FrameLayout>

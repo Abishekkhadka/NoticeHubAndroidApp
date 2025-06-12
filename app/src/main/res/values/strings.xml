@@ -45,5 +45,18 @@
     <string name="select_recipient">Select Recipient</string>
     <string name="send">Send</string>
     <string name="teacher_portal">Teacher Portal</string>
+    <string name="_9862539180">9862539180</string>
+    <string name="prem_rawal">Prem Rawal</string>
+    <string name="prem24_gmail_com">prem24@gmail.com</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="my_info">My Info</string>
+    <string name="first_name">First Name :</string>
+    <string name="last_name">Last Name :</string>
+    <string name="setting">Setting</string>
+    <string name="change_password">Change Password</string>
+    <string name="change_email">Change Email</string>
+    <string name="biometric_login">Biometric Login</string>
+    <string name="help_amp_support"><![CDATA[Help & Support]]></string>
+    <string name="log_out">Log Out</string>
 
 </resources>
