@@ -198,28 +198,28 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/tvHelp"
+                    android:id="@+id/tvContactUs"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/change_password"
+                    android:text="@string/contact_us"
                     android:textStyle="bold"
                     android:drawablePadding="8dp"
                     android:layout_margin="6dp"
                     android:textColor="@color/blue"
                     android:textSize="18sp"
-                    app:drawableStartCompat="@drawable/change_pass_icon" />
+                    app:drawableStartCompat="@drawable/contact_us_icon" />
 
                 <TextView
-                    android:id="@+id/tv"
+                    android:id="@+id/tvAboutUs"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/change_email"
+                    android:text="@string/about_us"
                     android:textStyle="bold"
                     android:drawablePadding="8dp"
                     android:textColor="@color/blue"
                     android:textSize="18sp"
                     android:layout_margin="6dp"
-                    app:drawableStartCompat="@drawable/change_email_icon" />
+                    app:drawableStartCompat="@drawable/about_us_icon" />
 
             </LinearLayout>
 

@@ -96,18 +96,17 @@
         android:textColor="@android:color/black"
         android:layout_marginTop="10dp" />
 
-    <FrameLayout
+    <!-- OTP Input -->
+    <LinearLayout
         android:layout_width="340dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-
         >
         <!-- OTP Input -->
         <EditText
             android:id="@+id/etOTP1"
-            android:layout_width="45dp"
+            android:layout_width="50dp"
             android:layout_height="wrap_content"
-            android:layout_gravity="start"
             android:background="@drawable/edittext_background"
             android:importantForAutofill="no"
             android:inputType="number"
@@ -119,13 +118,13 @@
 
         <EditText
             android:id="@+id/etOTP2"
-            android:layout_width="45dp"
+            android:layout_width="50dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="59dp"
             android:background="@drawable/edittext_background"
             android:importantForAutofill="no"
             android:inputType="number"
             android:maxLength="1"
+            android:layout_marginStart="8dp"
             android:minHeight="48dp"
             android:textAlignment="center"
             android:textSize="18sp"
@@ -134,13 +133,13 @@
 
         <EditText
             android:id="@+id/etOTP3"
-            android:layout_width="45dp"
+            android:layout_width="50dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="118dp"
             android:background="@drawable/edittext_background"
             android:importantForAutofill="no"
             android:inputType="number"
             android:maxLength="1"
+            android:layout_marginStart="8dp"
             android:minHeight="48dp"
             android:textAlignment="center"
             android:textSize="18sp"
@@ -149,12 +148,12 @@
 
         <EditText
             android:id="@+id/etOTP4"
-            android:layout_width="45dp"
+            android:layout_width="50dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="177dp"
             android:background="@drawable/edittext_background"
             android:importantForAutofill="no"
             android:inputType="number"
+            android:layout_marginStart="8dp"
             android:maxLength="1"
             android:minHeight="48dp"
             android:textAlignment="center"
@@ -164,21 +163,21 @@
 
         <EditText
             android:id="@+id/etOTP5"
-            android:layout_width="45dp"
+            android:layout_width="50dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="236dp"
             android:background="@drawable/edittext_background"
             android:importantForAutofill="no"
             android:inputType="number"
             android:maxLength="1"
             android:minHeight="48dp"
+            android:layout_marginStart="8dp"
             android:textAlignment="center"
             android:textSize="18sp"
             tools:ignore="LabelFor,RtlCompat,TextFields,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <EditText
             android:id="@+id/etOTP6"
-            android:layout_width="45dp"
+            android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:layout_gravity="end"
             android:background="@drawable/edittext_background"
@@ -186,11 +185,12 @@
             android:inputType="number"
             android:maxLength="1"
             android:minHeight="48dp"
+            android:layout_marginStart="8dp"
             android:textAlignment="center"
             android:textSize="18sp"
-            tools:ignore="LabelFor,RtlCompat,TextFields,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            tools:ignore="LabelFor,RtlCompat,TextFields,SpeakableTextPresentCheck,TouchTargetSizeCheck,VisualLintBounds" />
 
-    </FrameLayout>
+    </LinearLayout>
 
     <!-- Verify Button -->
     <com.google.android.material.button.MaterialButton
@@ -206,7 +206,8 @@
         android:background="@drawable/edittext_background"
         app:backgroundTint="@color/blue"
         android:layout_marginTop="20dp"
-        android:padding="10dp"/>
+        android:padding="10dp"
+        tools:ignore="VisualLintButtonSize" />
 
     <!-- Bottom Curved Shape -->
     <ImageView

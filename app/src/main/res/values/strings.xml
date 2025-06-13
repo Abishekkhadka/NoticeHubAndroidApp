@@ -58,5 +58,19 @@
     <string name="biometric_login">Biometric Login</string>
     <string name="help_amp_support"><![CDATA[Help & Support]]></string>
     <string name="log_out">Log Out</string>
+    <string name="customer_support">Customer Support</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="about_us">About Us</string>
+    <string name="current_password">Current Password</string>
+    <string name="update_your_password">Update Your Password</string>
+    <string name="update_your_email">Update Your Email</string>
+    <string name="new_email">New Email</string>
+    <string name="confirm_email">Confirm Email</string>
+    <string name="update_email">Update Email</string>
+    <string name="email_verification">Email Verification</string>
+    <string name="notice_board">Notice Board</string>
+    <string name="search_notice">Search notice</string>
+    <string name="exam">Exam</string>
+    <string name="all">All</string>
 
 </resources>

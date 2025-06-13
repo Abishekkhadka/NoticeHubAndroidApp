@@ -17,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="30dp">
+            android:padding="35dp">
 
             <!-- Subject Label -->
             <TextView
@@ -107,15 +107,15 @@
                 android:id="@+id/btnSendFeedback"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/edittext_background"
+                android:minHeight="48dp"
+                android:padding="10dp"
                 android:text="@string/send"
                 android:textAllCaps="false"
-                android:textStyle="bold"
-                android:minHeight="48dp"
                 android:textColor="@color/white"
                 android:textSize="18sp"
-                android:background="@drawable/edittext_background"
+                android:textStyle="bold"
                 app:backgroundTint="@color/blue"
-                android:padding="10dp"
                 tools:ignore="VisualLintButtonSize" />
 
         </LinearLayout>
