@@ -72,5 +72,23 @@
     <string name="search_notice">Search notice</string>
     <string name="exam">Exam</string>
     <string name="all">All</string>
+    <string name="view_more">View More</string>
+    <string name="add_notice">Add Notice</string>
+    <string name="faculty">Faculty</string>
+    <string name="select_faculty">Select Faculty</string>
+    <string name="level">Level</string>
+    <string name="select_level">Select Level</string>
+    <string name="program">Program</string>
+    <string name="select_program">Select Program</string>
+    <string name="semester">Semester</string>
+    <string name="select_semester">Select Semester</string>
+    <string name="publish_notice">Publish Notice</string>
+    <string name="title">Title</string>
+    <string name="enter_title">Enter Title</string>
+    <string name="file">File</string>
+    <string name="upload_a_file">Upload a file</string>
+    <string name="type_here">Type here ...</string>
+    <string name="notice_details">Notice Details</string>
+    <string name="publish_to">Publish To</string>
 
 </resources>
